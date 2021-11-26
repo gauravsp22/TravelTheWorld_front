@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore world</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fontawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                AroundThe<span>World</span>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#about-us">About</a>
+                <a href="#filter-gallery">Explore</a>
+                <a href="#hotel-section">Hotels</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="icon">
+                <i class="fa fa-search"></i>
+                <a href="#">Login</a>
+            </div>
+            <!-- <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+    
+    
+            </div> -->
+        </nav>
+        <script>
+            var i = 0;
+            var images = [];
+            var time = 3000;
+            images[0] = 'images/img3.jpg';
+            images[1] = 'images/img1.jpg';
+            images[2] = 'images/img4.webp';
+            images[3] = 'images/img7.jpg';
+            // images[4] = 'images/img33.jpg';
+            // images[5] = 'images/img5.jpg';
+            // images[4] = 'images/img32.jpg';
+            // images[5] = 'images/img33.jpg';
+
+            function changeImg() {
+                document.slide.src = images[i];
+                if (i < images.length - 1) {
+                    i++;
+                } else {
+                    i = 0;
+                }
+                setTimeout("changeImg()", time);
+            }
+            window.onload = changeImg;
+        </script>
+        <img name="slide" width="100%" height="650">
+        <section class="h-text">
+            <i class="fa fa-plane" id="plane"></i>
+            <h1>Plan your Dream trip Today!!!</h1>
+            <button>Choose Trips  <i class="fa fa-caret-right"></i></button>
+        </section>
+    </header>
+    <section id="about-us">
+        <h1>About Us</h1>
+        <div class="about">
+            <div class="about-info">
+                <p>Travel is the movement of people between distant geographical locations. Travel can be done by foot, bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be one way or round trip. Travel can also include relatively short stays between successive movements, as in the case of tourism <br> <br>
+                    <a href="https://en.wikipedia.org/wiki/Travel">Learn More <i class="fa fa-arrow-right"></i></a></p>
+            </div>
+            <div class="about-img">
+                <img src="images/img12.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section id="filter-gallery">
+        <h1 class="heading">Explore these Places</h1>
+        <div class="cards">
+            <div class="travel-menu">
+                <img src="images/img6.jpg" alt="">
+                <h2>Maldives</h2>
+                <p>Beaches call for you!</p>
+                <button>View Package</button>
+            </div>
+            <div class="travel-menu ">
+                <img src="images/img7.jpg " alt=" ">
+                <h2>Switzerland</h2>
+                <p>Amazing mountains, beautiful villages.</p>
+                <button>View Package</button>
+            </div>
+            <div class="travel-menu ">
+                <img src="images/img8.webp " alt=" ">
+                <h2>Bangkok</h2>
+                <p>Mesmarizing Temples and streets </p>
+                <button>View Package</button>
+            </div>
+            <div class="travel-menu ">
+                <img src="images/img9.jpeg " alt=" ">
+                <h2>Dubai</h2>
+                <p>Tall Buildings and great view</p>
+                <button>View Package</button>
+            </div>
+            <div class="travel-menu ">
+                <img src="images/img10.jpg " alt=" ">
+                <h2>Los Angeles</h2>
+                <p>Warm and comforting city life</p>
+                <button>View Package</button>
+            </div>
+            <div class="travel-menu ">
+                <img src="images/img11.jpeg " alt=" ">
+                <h2>Australia</h2>
+                <p>Sea view and Kangaroos</p>
+                <button>View Package</button>
+            </div>
+        </div>
+    </section>
+    <section id="hotel-section">
+        <h1>Find Places to stay</h1>
+        <div class="hotel">
+            <div class="hotel-opt">
+                <img src="images/img13.jpg" alt=" ">
+                <h2>Hotel Park Royale</h2>
+                <p>Flat 25% Off <br>Maldives</p>
+                <button>View More</button>
+            </div>
+            <div class="hotel-opt">
+                <img src="images//img14.jpg" alt=" ">
+                <h2>Hotel Peace</h2>
+                <p>Flat 20% Off <br>Dubai</p>
+                <button>View More</button>
+            </div>
+            <div class="hotel-opt">
+                <img src="images/img15.jpeg" alt=" ">
+                <h2>Hotel Vacation</h2>
+                <p>Flat 10% Off <br>Los Angeles</p>
+                <button>View More</button>
+            </div>
+            <div class="hotel-opt">
+                <img src="images/img16.jpg" alt=" ">
+                <h2>Hotel Crystal</h2>
+                <p>Flat 15% Off <br>Bangkok</p>
+                <button>View More</button>
+            </div>
+
+        </div>
+    </section>
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <div id="contact-box">
+         <!-- <section class="contact" id="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form">
+        <input class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
+        <input class="form-input" type="text" name="phone" id="phone" placeholder="Enter Your phone number">
+        <input class="form-input" type="email" name="email" id="email" placeholder="Enter Your email">
+        <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Ellaborate your concern"></textarea>
+        <button class="btn btn-sm btn-dark">Submit</button>
+                    
+        </div>
+        </section> -->
+
+
+
+
+            <form>
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone: </label>
+                    <input type="text" name="phone" id="phone" placeholder="Enter Your Mobile No" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+                <button class="send">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center"> copyright &copy; www.aroundtheworld.com. All Rights Reserved <br> </div>
+    </footer>
+
+
+</body>
+
+</html>
